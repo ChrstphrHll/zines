@@ -1,13 +1,11 @@
 <script lang="ts">
+	import favicon from '$lib/assets/favicon.svg';
+
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" type="image/png" href="/static/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
-	<link rel="shortcut icon" href="/static/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
-	<link rel="manifest" href="/static/site.webmanifest" />
+	<link rel="icon" href={favicon} />
 </svelte:head>
 
 {@render children()}
